@@ -1,3 +1,7 @@
+# Description
+    Recognition of captcha image with numbers and letters [0-9a-z] (case-insensitive).
+    using python3 and opencv-4.2.
+
 # Requirement:
     pip3 install opencv-python-4.2.0.34
 
