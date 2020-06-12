@@ -47,7 +47,7 @@ def splitText(img_res):
             new_h = max([(y2+h2), (y+h)]) - new_y
             box = np.int0([[new_x,new_y], [new_x+w,new_y], [new_x+new_w,new_y+new_h], [new_x,new_y+new_h]])
             result.append(box)
-        elif w > avg_width * 1.4: # 可能两个字母叠在一起
+        elif w > avg_width * 1.3: # 可能两个字母叠在一起
             box_left  = np.int0([[x,y], [x+w/2,y], [x+w/2,y+h], [x,y+h]])
             box_right = np.int0([[x+w/2,y], [x+w,y], [x+w,y+h], [x+w/2,y+h]])
             result.append(box_left)
